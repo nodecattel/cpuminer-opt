@@ -9,12 +9,8 @@ echo " ) /     / (_(_(_(__(__(_(_(/_ ) /  |/  |__(_/ (__(/_/ (_"
 echo "(_/                           (_/   '                    "
 echo -e "\033[0m"
 
-# Display credits in default color
-echo "cpuminer-opt is a fork of cpuminer-multi by TPruvot with"
-echo "optimizations imported from other miners developed by"
-echo "lucas Jones, djm34, Wolf0, pooler, Jeff garzik, ig0tik3d,"
-echo "elmad, palmd, and Optiminer, with additional optimizations"
-echo "by Jay D Dee."
+# Credit in plain text
+echo "cpuminer-opt is a fork of cpuminer-multi by TPruvot with optimizations imported from other miners developed by lucas Jones, djm34, Wolf0, pooler, Jeff garzik, ig0tik3d, elmad, palmd, and Optiminer, with additional optimizations by Jay D Dee."
 
 # Config file location
 config_file="mine.conf"
@@ -51,6 +47,10 @@ mining_pass="x"
 echo "pool_url=\"$pool_url\"" > "$config_file"
 echo "btc_address=\"$btc_address\"" >> "$config_file"
 echo "num_threads=\"$num_threads\"" >> "$config_file"
+
+# Print the final command that will be executed
+echo -e "\033[0;33mThe following command will be used to start mining:\033[0m"
+echo "./cpuminer -a sha256d -o \"$pool_url\" -u \"$btc_address\" -p \"$mining_pass\" -t \"$num_threads\""
 
 # Run the cpuminer command with the provided options
 echo -e "\033[0;33mStarting mining...\033[0m"
