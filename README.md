@@ -1,4 +1,4 @@
-# cpuminer-opt Setup and Usage Guide
+# cpuminer-opt setup and usage guide
 
 This guide will walk you through the steps to clone the repository, compile the cpuminer-opt binary, and start mining using the `mine.sh` script.
 
@@ -10,9 +10,6 @@ First, you need to clone the cpuminer-opt repository to your local machine:
 git clone https://github.com/nodecattel/cpuminer-opt.git
 cd cpuminer-opt
 
-Here’s the complete `README.md` file formatted as you requested:
-
-```markdown
 # cpuminer-opt Setup and Usage Guide
 
 This guide will walk you through the steps to clone the repository, compile the cpuminer-opt binary, and start mining using the `mine.sh` script.
